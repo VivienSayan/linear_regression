@@ -65,6 +65,16 @@ def descente_gradient(alpha,eps,X,Y,a,b):
     plt.xlabel("x")
     plt.ylabel("y")
     
+  
+
+def least_square(z,phi):
+    print("z = phi*theta")
+    print("=> theta = pseudo_inv(phi)*z")
+    phiT = np.transpose(phi)
+    phiTphi = np.matmul(phiT,phi)
+    pinv = np.matmul(np.linalg.inv(phiTphi), phiT)
+
+    print("theta = ",np.matmul(pinv,z))
     
     
     
@@ -91,15 +101,7 @@ phi = np.array([(1,1),
                 (4,1),
                 (5,1)])
 
-z = Y
-
-phiT = np.transpose(phi)
-
-phiTphi = np.matmul(phiT,phi)
-
-pinv = np.matmul(np.linalg.inv(phiTphi), phiT)
-
-print("theta_hat = ",np.matmul(pinv,z))
+least_square(Y,phi)
 
 
 
