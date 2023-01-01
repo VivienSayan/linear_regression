@@ -37,11 +37,11 @@ def dJdb(x,y,a,b):
     return res
 
 
-def descente_gradient(alpha,eps,X,Y,a,b):
+def gradient_descent(alpha,eps,X,Y,a,b):
     xvec = np.linspace(0,10,100) 
     yvec = np.linspace(0,10,100) 
     
-    print("Fonction coût avant descente du gradient:")
+    print("Cost function BEFORE gradient descent:")
     print("J(a={},b={}) = {}".format(a,b,J(X,Y,a,b)))
     print()    
     plt.figure(1)
@@ -57,7 +57,7 @@ def descente_gradient(alpha,eps,X,Y,a,b):
         
     
     print()
-    print("Fonction coût apres descente du gradient:")
+    print("Cost function AFTER gradient descent:")
     print("J(a={},b={}) = {}".format(a,b,J(X,Y,a,b)))    
     plt.figure(2)
     plt.plot(X,Y,"g.")
@@ -89,10 +89,10 @@ b = 1.
 alpha = 0.1
 eps = 0.0001
 
-descente_gradient(alpha,eps,X,Y,a,b)
+gradient_descent(alpha,eps,X,Y,a,b)
 
 print()
-print("--------- solution par méthode des moindres carrés ----------")
+print("--------- least square method solution ----------")
 print()
 
 phi = np.array([(1,1),
