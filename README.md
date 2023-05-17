@@ -1,15 +1,15 @@
 # linear_regression
 A python program that computes the two parameters a and b of a linear function of type f(x)=ax+b using a gradient descent method
 
-Call the function descente_gradient(alpha,eps,X,Y,a,b) where:
+Call the function gradient_descent(alpha,eps,X,Y,a,b) where:
 
 alpha : the learning rate
 
-eps   : the stop criterion
+eps   : a threshold
 
 X     : a vector that contains all of the x values
 
-Y     : a vector that contains all of the f(x) values
+Y     : a vector that contains all of the y values
 
 a     : the slope
 
