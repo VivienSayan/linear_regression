@@ -1,5 +1,5 @@
 # linear_regression
-A python program that computes the two parameters a and b of a linear function of type f(x)=ax+b using a gradient descent method
+A python program that computes the two parameters a and b of a linear function f(x)=ax+b using a gradient descent method. A comparison is made against a least square method.
 
 Call the function gradient_descent(alpha,eps,X,Y,a,b) where:
 
