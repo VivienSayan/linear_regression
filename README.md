@@ -16,3 +16,5 @@ a     : The slope
 b     : The y-intercept
 
 The results are printed and compared with the results obtained from a least square method
+
+Do not hesitate to report any mistake !
